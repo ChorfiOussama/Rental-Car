@@ -1,0 +1,181 @@
+.bg-secondary {
+    background-color: #ccccff !important;
+    border-radius: 50px;
+}
+
+.px-lg-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    padding: 30px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1aff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: serif;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    display: block;
+    padding: 0.5rem 1rem;
+    /* background-color: #1a1aff; */
+    background-color: #8484ff;
+    color: #ccccff;
+    padding: 30px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: serif;
+    border-radius: 100px;
+}
+.navbar-toggler {
+    background-color: #1a1aff;
+}
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: serif;
+    color: #1a1aff;
+    font-weight: 600;
+}
+.search {
+    margin-top: 20px;
+    margin-left: 25%;
+    font-family: serif;
+    text-align: center;
+}
+.custom-select {
+    height: 50px;
+    display: inline-block;
+    width: 100%;
+    padding: 0.375rem 1.75rem 0.75rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border: 1px solid #ced4da;
+    border-radius: 20%;
+}
+.form-control {
+    font-size: 1rem;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+#Search {
+    color: #fff;
+    border-radius: 20%;
+    height: 50px;
+}
+
+.banner-container {
+    background: linear-gradient(rgba(57, 68, 186, 0.9), rgba(28, 30, 50, 0.9)),
+        url(../images/conter.png);
+    background-attachment: fixed;
+    font-family: serif;
+    border-radius: 200px;
+}
+.banner-container p {
+    color: #637ece;
+}
+.nous {
+    text-align: center;
+}
+
+/* Start Subscribe Section */
+.subscribe {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.subscribe-title h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: #637ece;
+}
+.subscribe-title p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.box-input {
+    align-items: center;
+    justify-content: center;
+}
+.box-input input {
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #637ece;
+}
+.box-input button {
+    width: 40%;
+    height: 40px;
+    border-radius: 100px;
+}
+
+/* End Subscribe Section */
+
+/* Start Find Your Car  */
+.car-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .car-rent-item {
+    background: #ced4da;
+    margin: 13px 0;
+    font-family: cursive;
+    border-radius: 20px;
+  }
+  .car-rent-item:hover {
+    background: #17f3f0d4;
+  }
+  .car-rent-item h4 {
+    padding: 20px 5px;
+  }
+  .car-rent-item-info {
+    padding: 20px 0;
+  }
+  .car-rent-item-info i {
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .car-rent-item a {
+    margin-bottom: 20px;
+    font-family: serif;
+  }
+  #btnPrix {
+    border-radius: 50px;
+  }
+  #btnPrix:hover {
+    border-radius: 10px;
+  }
+
+  .category .section-header h2 {
+    font-size: 50px;
+    font-family: serif;
+    color: #2b2e4a;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+
+  /* End Find Your Car  */
+
+  footer a{
+    text-decoration: none;
+    color: inherit;
+  }

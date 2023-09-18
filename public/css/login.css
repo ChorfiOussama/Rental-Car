@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-style);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #ccccff;
+  box-shadow: 0 15px 25px rgba(143, 124, 236, 0.7);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-family: serif;
+  color: #1a1aff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-box .user-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+
+  color: #1a1aff;
+
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #1a1aff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: relative;
+  left: 0;
+  top: -60px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: serif;
+  color: #1a1aff;
+
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -85px;
+  left: 0;
+  color: #8f7cec;
+  font-size: 12px;
+}
+
+#submit {
+  padding: 10px 20px;
+  color: #1a1aff;
+  font-size: 16px;
+  font-family: serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  border: 1px solid #8f7cec;
+  margin: auto;
+}
+
+#submit:hover {
+  background: #8f7cec;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 50px #8f7cec,
+    0 0 100px #8f7cec;
+}
+
+.button-form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  margin-top: 450px;
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
