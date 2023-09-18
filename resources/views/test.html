@@ -1,0 +1,214 @@
+Ajouter cette table sur Laravel: (client) id: Primaire int AUTO_INCREMENT nom:
+varchar(20) cin: varchar(20) permis: varchar(20) adresse: varchar(200) tele: int
+gsm: int matricule: unique varchar(15) marque: varchar(20) duree: smallint
+message: varchar(300) date_locat: datetime in laravel I have two table 1- car
+table containing car number,brand,picture,price 2- Clients table contains name,
+adresse ,phone ,car number I want if I enter the vehicle number in the Clients
+table , the brand and price are also put in laravel ajouter value depuis base de
+donnéé
+<input type="text" class="form-control text-center" name="matricule" value="" />
+
+<tr>
+    <td><a href="{{ route('locataire.show') }}">create</a></td>
+</tr>
+
+{{ route('locataire.show', ['locataire' => $locataireId]) }}
+961b6dd3ede3cb8ecbaacbd68de040cd78eb2ed5889130cceb4c49268ea4d506 How to convert
+this code to laravel //locataire.blade.php
+<?php
+  // Initialiser la session
+  session_start();
+  // Vérifiez si l'utilisateur est connecté, sinon redirigez-le vers la page de connexion
+  if(!session()->has('username')){ header("Location: login"); exit(); } ?>
+@extends('admin.layout') @section('title', 'Locataire') @section('content')
+<div class="container">
+    <p>test</p>
+</div>
+
+<div class="featured-category category">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="section-header">
+                <h2>{{ $voiture['marque'] }}</h2>
+            </div>
+            <div class="car-container">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="car-rent-item">
+                            <img
+                                class="bd-placeholder-img card-img-top"
+                                width="80%"
+                                height="200"
+                                src="../images/{{ $voiture['image'] }}"
+                                alt="{{ $voiture['image'] }}"
+                            />
+                            <div class="car-rent-item-info">
+                                <div class="row">
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i class="fa fa-car text-primary"></i>
+                                        <span class="description-title"
+                                            >Transmission :
+                                        </span>
+                                        {{ $voiture['transmission'] }}
+                                    </div>
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i
+                                            class="fa fa-charging-station text-primary"
+                                        ></i>
+                                        <span class="description-title"
+                                            >Carburant :
+                                        </span>
+                                        {{ $voiture['carburant'] }}
+                                    </div>
+
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i class="fa fa-cogs text-primary"></i>
+                                        <span class="description-title"
+                                            >Stéréo :
+                                        </span>
+                                        {{ $voiture['stereo'] }}
+                                    </div>
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i
+                                            class="fa fa-chart-bar text-primary"
+                                        ></i>
+                                        <span class="description-title"
+                                            >Climatisation :
+                                        </span>
+                                        {{ $voiture['climatisation'] }}
+                                    </div>
+
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i class="fa fa-users text-primary"></i>
+                                        <span class="description-title"
+                                            >Max passagers :
+                                        </span>
+                                        {{ $voiture['maxpassagers'] }}
+                                    </div>
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i
+                                            class="fa fa-suitcase text-primary"
+                                        ></i>
+                                        <span class="description-title"
+                                            >Bagages :
+                                        </span>
+                                        {{ $voiture['bagages'] }}
+                                    </div>
+                                    <div
+                                        class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                    >
+                                        <i
+                                            class="fa fa-car-side text-primary"
+                                        ></i>
+                                        <span class="description-title"
+                                            >Des Portes :
+                                        </span>
+                                        {{ $voiture['desPortes'] }}
+                                    </div>
+                                </div>
+                            </div>
+                            <span
+                                class="btn btn-primary px-3"
+                                id="btnPrix"
+                                href="{{route('voiture.show',['voiture'=> $voiture['id']])}}"
+                            >
+                                {{ $voiture['prix'] }}Dh/Day
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Utilisateur Bootstrap
+
+ajouter les Informations suivantes a gauche de la page
+      "image de voiture"
+      Transmission : Automatic
+      Carburant : Essence
+      Stéréo : AM/FM w/ CD player
+      Climatisation : A / C
+      Max passagers : 5
+      Bagages : 4
+      Des Portes : 4
+      prix: 800 Dh
+
+ajouter un form a droit de la page ( Nom, CIN N°, Permis
+de Conduite N°, Adresse, Télephone,GSM, Duree prevue, Message )
+
+
+Ajouter se paragraphe sur un page web Utilisateur Bootstrap
+- AGE MINIMUM 21 ANS .
+- PERMIS DE CONDUIRE VALABLE DEPUIS 2 ANS.
+- LE PAIEMENT S’EFFECTUE   BIEN AU MOMENT DE LA PRISE EN CHARGE DU VÉHICULE SOIT EN ESPÈCES OU EN DEVISES.
+- LE LOCATAIRE EST RESPONSABLE SUR ROUTE COMME AU STATIONNEMENT.
+- LE LOCATAIRE DOIT RENDRE LE VÉHICULE DANS LE MÊME ÉTAT À SA LIVRAISON.
+- LE CARBURANT EST À LA CHARGE DU CLIENT.
+- L’UTILISATION DES VÉHICULES SUR PISTES NON GOUDRONNÉES EST ABSOLUMENT INTERDITE.
+- NOS TARIFS SONT APPLICABLES SUR RÉSERVATION : 48 HEURES À L’AVANCE ET 7 JOURS EN PÉRIODE DE HAUTE SAISON.
+- LA DURÉE DE VOTRE LOCATION COMMENCE ET FINIT À L'HEURE DE DÉMARRAGE CONVENUE ET L'HEURE DE FIN CONVENUE QUI FIGURENT SUR VOTRE CONTRAT DE LOCATION.
+
+NOS TARIFS COMPRENNENT
+- L’HUILE, L’ENTRETIEN DU VÉHICULE .
+- LE CARBURANT DU VÉHICULE N’EST PAS COMPRIS DANS NOS TARIFS.
+
+ASSURANCES :
+- L’ASSURANCE COUVRE LES DOMMAGES ILLIMITÉS CONTRE LES TIERS SUIVANT LA RÉGLEMENTATION EN VIGUEUR AU MAROC.
+- LA RESPONSABILITÉ CIVILE DU LOCATAIRE ET DU CONDUCTEUR.
+- INCENDIE ET VOL.
+- LES DÉGÂTS DU VÉHICULE NE SONT COUVERTS QUE SUR PRODUCTION D’UN CONSTAT D’ACCIDENT DANS LES 24 HEURES.
+- EN CAS D’ACCIDENT, SI LE CLIENT N’EST PAS FAUTIF, IL NE PAYERA RIEN. LES DÉGÂTS MATÉRIELS RESTENT À LA CHARGE DU CLIENT DANS LA LIMITE D’UNE FRANCHISE, QUAND CE DERNIER EST FAUTIF.
+
+ASSURANCES :
+- L’ASSURANCE COUVRE LES DOMMAGES ILLIMITÉS CONTRE LES TIERS SUIVANT LA RÉGLEMENTATION EN VIGUEUR AU MAROC.
+- LA RESPONSABILITÉ CIVILE DU LOCATAIRE ET DU CONDUCTEUR.
+- INCENDIE ET VOL.
+- LES DÉGÂTS DU VÉHICULE NE SONT COUVERTS QUE SUR PRODUCTION D’UN CONSTAT D’ACCIDENT DANS LES 24 HEURES.
+- EN CAS D’ACCIDENT, SI LE CLIENT N’EST PAS FAUTIF, IL NE PAYERA RIEN. LES DÉGÂTS MATÉRIELS RESTENT À LA CHARGE DU CLIENT DANS LA LIMITE D’UNE FRANCHISE, QUAND CE DERNIER EST FAUTIF.
+
+LOCATION DE LONGUE DURÉE :
+- SUR DEMANDE, DES TARIFS TRÈS AVANTAGEUX POUR TOUTE LOCATION DE PLUS D’UN MOIS.
+- LES TARIFS JOURNALIERS SONT CALCULÉS SUR LA BASE DE 24 HEURES.
+- LES TARIFS HEBDOMADAIRES SONT CALCULÉS SUR LA BASE DE 7 JOURS CONSÉCUTIFS.
+
+
+Écrire fpdf dans Laravel se compose de :
+        - un cadre sur la page
+        - un Header ( Logo,Titre en gras )
+        - un Footer (Tel:+212 552684500 / Adresse: 198 Hay Masroure 1 Temara 12000 / Email: info@gmail.com )
+        - Il s'agit d'informations de base de donnée (id,nom,cin,permis)
+
+
+
+
+        id 
+        matricule 	varchar(15)
+        marque	varchar(50)	
+        prix	decimal(8,2)	
+        nom  varchar(20)
+        cin	varchar(20)
+        permis	varchar(20)
+        adresse	varchar(200)	
+        tele	int
+        gsm	int
+        dateDebut date
+        duree	smallint
+        message varchar(250)
+       
+           <!-- <div class="d-flex">
+      {!!$voitures->links()!!}
+    </div> -->
